@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {ICellEditorParams} from 'ag-grid/main';
+import {ICellEditorParams} from 'ag-grid-community';
 import {AgEditorComponent,} from 'ag-grid-angular';
 import {MatInput} from '@angular/material';
 

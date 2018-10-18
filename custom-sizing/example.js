@@ -1,5 +1,5 @@
 import "./styles.scss";
-import {Grid} from "ag-grid";
+import {Grid} from "ag-grid-comm";
 
 
 // by default, material uses 8px as a base unit for its grid. The logic below overrides that

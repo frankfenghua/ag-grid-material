@@ -19,7 +19,7 @@ import {
     MatToolbarModule
 } from '@angular/material';
 
-import {AgGridModule} from 'ag-grid-angular/main';
+import {AgGridModule} from 'ag-grid-angular';
 import {AgGridMaterialTextEditorComponent} from './ag-grid-material-text-editor/ag-grid-material-text-editor.component';
 import {AgGridMaterialSelectEditorComponent} from './ag-grid-material-select-editor/ag-grid-material-select-editor.component';
 import {AgGridMaterialCheckboxCellComponent} from './ag-grid-material-checkbox-cell/ag-grid-material-checkbox-cell.component';

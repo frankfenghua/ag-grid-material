@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {GridOptions} from 'ag-grid/main';
+import {GridOptions} from 'ag-grid-community';
 import {AgGridMaterialTextEditorComponent} from './ag-grid-material-text-editor/ag-grid-material-text-editor.component';
 import {AgGridMaterialSelectEditorComponent} from './ag-grid-material-select-editor/ag-grid-material-select-editor.component';
 import {AgGridMaterialDatepickerEditorComponent} from './ag-grid-material-datepicker-editor/ag-grid-material-datepicker-editor.component';
@@ -44,22 +44,18 @@ export class AppComponent {
                 cellEditorFramework: AgGridMaterialTextEditorComponent
             },
             {
-                headerName: 'Price',
-                field: 'price'
-            },
-            {
                 headerName: 'Made on',
                 field: 'madeOn',
                 editable: true,
                 cellEditorFramework: AgGridMaterialDatepickerEditorComponent,
-                valueFormatter: (data) => moment(data.value).format('L')
+                valueFormatter: (data) => data.value ? moment(data.value).format('L') : null
             },
         ];
 
         this.rowData = [
-            {make: 'Toyota', model: 'Celica', price: 35000, madeOn: new Date(2006, 10, 25)},
-            {make: 'Ford', model: 'Mondeo', price: 32000, madeOn: new Date(2016, 2, 13)},
-            {make: 'Porsche', model: 'Boxter', price: 72000, madeOn: new Date(2010, 7, 10)}
+            {make: 'Toyota', model: 'Celica', madeOn: null},
+            {make: 'Ford', model: 'Mondeo', madeOn: new Date(2016, 2, 13)},
+            {make: 'Porsche', model: 'Boxter', madeOn: new Date(2010, 7, 10)}
         ];
     }
 }

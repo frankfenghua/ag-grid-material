@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AgRendererComponent } from "ag-grid-angular/main";
-import { ICellRendererParams } from "ag-grid/main";
+import { ICellRendererParams } from "ag-grid-community";
 
 @Component({
   selector: 'app-ag-grid-material-checkbox-cell',

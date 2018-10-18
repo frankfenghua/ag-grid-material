@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
-import { IAfterGuiAttachedParams, ICellEditorParams } from "ag-grid/main";
+import { IAfterGuiAttachedParams, ICellEditorParams } from "ag-grid-community";
 import { AgEditorComponent, } from "ag-grid-angular";
 import { MatSelect } from "@angular/material";
 
