@@ -10,7 +10,7 @@ import {MatDatepicker} from '@angular/material';
             <input matInput [matDatepicker]="picker" [(ngModel)]="value">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         </mat-form-field>
-        <mat-datepicker #picker (selectedChanged)="onSelectChange(e)"></mat-datepicker>
+        <mat-datepicker panelClass="ag-custom-component-popup" #picker (selectedChanged)="onSelectChange(e)"></mat-datepicker>
     `,
     styles: [
             `

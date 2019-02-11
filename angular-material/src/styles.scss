@@ -19,8 +19,8 @@ $theme: mat-light-theme($primary, $accent);
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // adjust the icons path
-$ag-mat-icons-path: "~ag-grid-community/src/styles/material-icons/";
-$ag-icons-path: "~ag-grid-community/src/styles/icons/";
+$ag-mat-icons-path: "~ag-grid-community/src/styles/ag-theme-material/icons/";
+$ag-icons-path: "~ag-grid-community/src/styles/ag-theme-base/icons/";
 
 @import '~ag-grid-community/src/styles/ag-grid';
 
@@ -29,7 +29,7 @@ $ag-mat-primary: mat-color($primary);
 $ag-mat-accent: mat-color($accent);
 
 // Import the ag-Grid material-next theme
-@import '~ag-grid-community/src/styles/ag-theme-material';
+@import '~ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material';
 
 body, html {
     margin: 0;
